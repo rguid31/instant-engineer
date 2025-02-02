@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Engineering Problem Solver</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        textarea {
+            width: 80%;
+            height: 200px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Engineering Problem Solver</h1>
+    <p>Paste your engineering problem below, and I will provide a solution:</p>
+    <textarea id="problem" placeholder="Enter your engineering problem here..."></textarea>
+    <br>
+    <button onclick="solveProblem()">Solve Problem</button>
+
+    <script>
+        function solveProblem() {
+            const problem = document.getElementById('problem').value;
+            // Here, you would need to implement the logic to solve the engineering problem
+            // based on the input provided by the user in the textarea.
+            const solution = 'This is where the solution to the engineering problem would be displayed.';
+            alert(solution);
+        }
+    </script>
+</body>
+</html>
